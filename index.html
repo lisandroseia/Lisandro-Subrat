@@ -3,32 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>Lisandro-Subrat</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 <div id="container">
 <div id="header">
-<h1>survey</h1>
+<h1 id="title">survey</h1>
 <p id="description">Thanks for filling the survey!</p>
 </div>
 
 <form id="survey-form">
-  <div>
+  <div class="form-control">
     <label id="name-label">Name:</label>
     <input type="text" placeholder="Enter your name"  name="name" id="name"  required>
   </div>
-  <div>
+  <div class="form-control">
     <label id="email-label">Email:</label>
     <input type="email" placeholder="Enter your email"  name="email" id="email"  required>
   </div>
-  <div>
-    <label id="number-label">Name:</label>
+  <div class="form-control">
+    <label id="number-label">age:</label>
     <input type="number" placeholder="Enter your age"  name="age" id="number" min="10" max="100" required>
   </div>
-  <div>
-    <label for="cars">Dropdown options:</label>
-    <select name="cars" id="cars">
+  <div class="form-control">
+    <label for="Dropdown">Dropdown options:</label>
+    <select name="Dropdown" id="dropdown">
       <option disabled="" selected="" value="">Select an option</option>
       <option value="option1">Option 1</option>
       <option value="option2">Option 2</option>
@@ -36,8 +37,8 @@
       <option value="option4">Option 4</option>
     </select>  
   </div>  
-  <div>
-    <p>Radio Options :</p>
+  <div class="form-control">
+    <h2>Radio Options :</h2>
     <input type="radio" id="age1" name="age" value="30">
     <label for="option1">option 1</label><br>
     <input type="radio" id="age2" name="age" value="60">
@@ -45,8 +46,8 @@
     <input type="radio" id="age3" name="age" value="100">
     <label for="option3">option 3</label><br><br>
   </div>  
-  <div>
-    <p>Check Boxes</p>
+  <div class="form-control">
+    <h2>Check Boxes</h2>
     <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
     <label for="checkbox1"> checkbox 1</label><br>
     <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
@@ -54,6 +55,16 @@
     <input type="checkbox" id="vehicle3" name="checkbox3" value="checkbox3">
     <label for="checkbox3"> checkbox 3</label><br><br>    
   </div>
+
+  <div class="form-control" id="text-div">
+    <p>aditional comments:</p>
+    <textarea placeholder="Enter your comment here">
+    </textarea>
+  </div>
+  <div class="form-control" id="submit-div">
+<button id="submit">submit</button>
+  </div>
+
 </form>
 
 
@@ -70,8 +81,8 @@
 
 
 
-    <!--    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<script  src="js/index.js"></script>-->
+<script  src="js/index.js"></script>
   </body>
 </html>
